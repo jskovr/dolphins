@@ -1,0 +1,27 @@
+Expression   Matches
+
+uvwxyz       uvwxyz
+
+'.'          any character except a newline. 
+
+'*'          0 or more repetitions of the preceding RE 
+             (e.g., ab* will match ‘a’, ‘ab’, or ‘a’ followed by any number of ‘b's)
+'+'          1 or more repetitions of the preceding RE.  
+             (e.g., ab+ will match 'ab' or 'abb')
+'?'          0 or 1 repetitions of the preceding RE. ab? will match either ‘a’ or ‘ab’.
+
+
+'.*'         0 or more of any character, such as 'supercalifragilisticexpialidocious' or '42'.              
+a.*b matches any string that contains an "a" and a "b" at some later point.
+             
+
+
+
+[A-Z]        any character between A and Z
+[a-z]        any character between a and z
+[0-9]        any digit        
+[^]          not, e.g. [^0-9] means not a digit
+\s           any white space characters (usually single space or tab)
+\d           any digits (equivalent to [0-9])
+
+[u-z]        One of either u, v, w, x, y, or z
